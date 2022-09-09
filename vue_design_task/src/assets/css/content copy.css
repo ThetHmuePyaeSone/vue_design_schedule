@@ -1,0 +1,684 @@
+.pre-content{
+background-color: black;
+width: 100%;
+max-width: 48.892vw;
+height: 62.842vw;
+}
+.content{
+    
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+
+/* WILKINSON/White */
+
+color: #FFFFFF;
+
+position: absolute;
+top: 512px;
+
+}
+.title{
+    /* title */
+width: 375px;
+}
+
+
+.img-preview{
+    position: relative;
+}
+.autolayout{
+
+position: absolute;
+width: 343px;
+left: 16px;
+top: 140px;
+
+}
+
+.mid{
+    position: absolute;
+    top:442px;
+}
+
+.year{
+    position: absolute;
+    width: 29px;
+    height: 19px;
+    left: 177px;
+    font-size: 16px;
+    line-height: 23px;
+    /* top: 482px; */
+
+    }
+
+.day{
+    position: absolute;
+    width: 29px;
+    height: 39px;
+    left: 177px;
+
+    font-size: 32px;
+    line-height: 38px;
+    /* top: 501px; */
+    }
+
+.pre{
+    position: absolute;
+    width: 40px;
+    height: 21px;
+    left: 35px;
+    top: 21px;
+
+    /* top: 512px; */
+}
+.prearrow{
+    
+position: absolute;
+left: 21px;
+top: 35px;
+}
+
+.next{
+    position: absolute;
+    width: 40px;
+    height: 21px;
+    left: 300px;
+    top: 21px;
+
+    /* top: 512px; */
+    
+}
+.nextarrow{
+    position: absolute;
+    left: 347px;
+    top: 35px;
+}
+
+.list{
+    /* list */
+
+position: absolute;
+height: 352px;
+left: 16px;
+top: 78px;
+
+}
+.item{
+ /* item */
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 8px;
+
+}
+
+.thumbnail-80{
+ /* thumbnail-80 */
+width: 60px;
+height: 59px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+
+
+.frame-292{
+
+
+/* Frame 292 */
+
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 189px;
+height: 59px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.frame-date{
+  
+width: 47px;
+height: 17px;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+
+/* Neutral/Gray */
+
+color: #C4C9D0;
+
+}
+
+.frame-text{
+  
+/* ウィルキンソン炭酸水 500ml */
+
+
+width: 160px;
+/* height: 40px; */
+
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+
+display: flex;
+align-items: center;
+
+/* WILKINSON/White */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+    
+
+}
+
+.pt{
+    /* pt */
+
+
+width: 78px;
+height: 34px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+.pt-text{
+    /* pt */
+
+/* width: 14px; */
+height: 22px;
+top: 9px;
+
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+text-align: right;
+
+/* WILKINSON/Gold */
+
+color: #C29B3E;
+
+
+}
+
+.pt-minus{
+    /* pt */
+/* width: 14px; */
+height: 22px;
+top: 9px;
+
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+text-align: right;
+
+/* Neutral/Gray */
+color: #C4C9D0;
+
+}
+
+.present-content{
+  /* 貯めたポイントで応募する！ */
+padding: 0px;
+gap: 24px;
+position: absolute;
+width: 375px;
+height: 307px;
+top: 467px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.present-title{
+   /* tite */
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+position: absolute;
+left: 16px;
+}
+
+.present-text{
+    /* PRESENT */
+
+font-family: 'Barlow Condensed';
+font-style: normal;
+text-transform: uppercase;
+margin: 1px 0;
+color: #C29B3E;
+}
+.present-subtitle{
+    /* 貯めたポイントで応募する！ */
+
+height: 40px;
+
+font-family: 'A-OTF Midashi Go MB31 Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+/* identical to box height, or 167% */
+letter-spacing: -0.08em;
+color: #FFFFFF;
+margin: 2px 0;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+/* present-slide */
+.present-slide{
+    /* カルーセル */
+position: relative;
+top: 67px;
+
+}
+.slide-list{
+    /* list */
+
+/* display: flex; */
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+left: 4.27%;
+right: -30.93%;
+top: 0%;
+bottom: 0%;
+
+}
+
+.present-panel{
+/* panel/present */
+width: 153px;
+height: 160px;
+background: #D40019;
+flex: none;
+}
+
+.panel-img{
+position: relative;
+width: 150px;
+height: 100px;
+top: 1px;
+}
+
+.panel-text{
+width: 133px;
+height: 42px;
+left: 10px;
+top: 109px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+}
+
+.img-text{
+    /* text */
+/* Auto layout */
+
+/* display: flex; */
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 10px;
+
+position: absolute;
+width: 152px;
+height: 100px;
+left: 0px;
+top: 0px;
+
+}
+
+.img-frame{
+    /* Frame */
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+width: 104px;
+height: 75px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.img-frame > .group{
+/* Group 110 */
+
+width: 22.85px;
+height: 23.15px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.frame-pt{
+/* pt */
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+width: 85.85px;
+height: 53px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.frame-pt > .text{
+    /* 200 */
+width: 59px;
+height: 53px;
+
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 600;
+font-size: 44.1043px;
+line-height: 53px;
+/* identical to box height, or 120% */
+
+
+/* WILKINSON/White */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.present-btn{
+ /* button */
+
+
+width: 343px;
+height: 56px;
+margin: 94px auto 0;
+border: 2px solid #FFFFFF;
+}
+
+.present-btn > .text{
+  /* 応募可能なプレゼント一覧 */
+
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+text-align: center;
+
+/* WILKINSON/White */
+
+color: #FFFFFF;
+}
+
+/* /contact section */
+.contact{
+    /* お問い合わせ */
+position: relative;
+top: 852px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+.contact-title{
+    /* tite */
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 135px;
+height: 64px;
+left: 0.25px;
+top: 0px;
+
+}
+
+.contact-button{
+  /* button/CONTACT */
+position: absolute;
+width: 342.5px;
+height: 56px;
+left: 0.25px;
+top: 72px;
+
+}
+
+.contact-title > .present{
+    /* PRESENT */
+
+
+width: 53px;
+height: 16px;
+
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+
+text-transform: uppercase;
+
+/* WILKINSON/Gold */
+
+color: #C29B3E;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.contact-title > .text{
+
+    /* 貯めたポイントで応募する！ */
+
+width: 135px;
+height: 48px;
+
+font-family: 'A-OTF Midashi Go MB31 Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 48px;
+/* identical to box height */
+
+letter-spacing: -0.08em;
+
+/* WILKINSON/White */
+
+color: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.button-half-left{
+    /* button-half */
+
+/* button-half */
+
+position: absolute;
+left: 0%;
+right: 52.26%;
+top: 0%;
+bottom: 0%;
+
+
+/* Rectangle 22 */
+
+
+box-sizing: border-box;
+
+/* WILKINSON/White */
+
+border: 2px solid #FFFFFF;
+
+}
+
+.button-half-right{
+    /* button-half */
+
+/* button-half */
+
+
+position: absolute;
+left: 51.97%;
+right: 0.29%;
+top: 0%;
+bottom: 0%;
+
+
+/* Rectangle 22 */
+
+
+box-sizing: border-box;
+
+/* WILKINSON/White */
+
+border: 2px solid #FFFFFF;
+
+}
+
+.button-half-text{
+    /* アプリの利用方法 */
+
+position: absolute;
+right: 11.93%;
+top: 21.43%;
+bottom: 21.43%;
+
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+/* or 114% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* WILKINSON/White */
+
+color: #FFFFFF;
+}
+
+.left{
+    left: 39.62%;
+}
+.right{
+    left: 11.62%;
+}
+
+/* /slide */
+.carousel__item {
+	color: white;
+}
+
+.carousel__slide {
+   margin: 0 5px !important; 
+}
+
+.carousel__prev,
+.carousel__next {
+	box-sizing: content-box;
+	border: 5px solid white;
+}

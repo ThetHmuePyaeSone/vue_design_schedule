@@ -1,0 +1,46 @@
+.header{
+    width: 100%;
+/* width: 375px; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px;
+background: #000000;
+}
+
+.vector{
+width: 177.2px;
+}
+
+.menu{
+    width: 30px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.closemenu-left{
+
+position: absolute;
+width: 30px;
+height: 2px;
+left: 334.41px;
+top: 42.21px;
+
+/* WILKINSON/Gold */
+
+background: #C29B3E;
+transform: rotate(45deg);
+}
+
+.closemenu-right{
+position: absolute;
+width: 30px;
+height: 2px;
+left: 333.41px;
+top: 63.21px;
+
+/* WILKINSON/Gold */
+
+background: #C29B3E;
+transform: rotate(-45deg);
+}
