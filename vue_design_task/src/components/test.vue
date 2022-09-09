@@ -1,9 +1,9 @@
 <template>
-    
-  
+    <div v-if="status">
+    <div class="img-preview">
     <img class="title" src="../assets/img/title.png"  />
     <img class="autolayout" src="../assets/img/ポイント.png" />
-
+   </div>
     <div class="content">
     <img class="prearrow" src="../assets/img/arrow/pre.svg" alt="Pre" />
     <img class="nextarrow" src="../assets/img/arrow/next.svg" alt="Next" />
@@ -84,11 +84,43 @@
 
 <div class="present-content">
     <div class="present-title">
-        <span class="present-text">PRESENT</span>
-        <span class="present-subtitle">貯めたポイントで応募する！</span>
+        <p class="present-text">PRESENT</p>
+        <p class="present-subtitle">貯めたポイントで応募する！</p>
     </div>
+
+   
+
+
+
     <div class="present-slide">
-        <div class="slide-list">
+
+        <carousel :settings="settings" :breakpoints="breakpoints">
+		<slide v-for="slide in 5" :key="slide">
+            <div class="present-panel carousel__item">
+            <img class="panel-img" src="../assets/img/panel/img.png" alt="Img" />
+            
+            <div class="img-text">
+                <div class="img-frame">
+                    <span class="text">LINEポイント</span>
+                    <div class="frame-pt">
+                      <img class="group" src="../assets/img/panel/Group_110.svg" />
+                      <span class="text">200</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-text">
+                <span>LINEポイント200pt</span>
+                <span>プレゼント</span>
+            </div>
+          </div>
+
+		</slide>
+		<template #addons>
+			<navigation />
+		</template>
+	</carousel>
+<!--     
           <div class="present-panel">
             <img class="panel-img" src="../assets/img/panel/img.png" alt="Img" />
             
@@ -113,7 +145,7 @@
                     <span class="text">LINEポイント</span>
                     <div class="frame-pt">
                       <img class="group" src="../assets/img/panel/Group_110.svg" />
-                      <span class="text">200</span>
+                      <span class="text">100</span>
                     </div>
                 </div>
             </div>
@@ -151,22 +183,44 @@
             </div>
 
             <span class="panel-text">LINEポイント100ptプレゼント</span>
-          </div>    
+          </div>
+          
+          <div class="present-panel">
+            <img class="panel-img" src="../assets/img/panel/img.png" alt="Img" />
 
-        </div>
+            <div class="img-text">
+                <div class="img-frame">
+                    <span class="text">LINEポイント</span>
+                    <div class="frame-pt">
+                      <img class="group" src="../assets/img/panel/Group_110.svg" />
+                      <span class="text">100</span>
+                    </div>
+                </div>
+            </div>
+
+            <span class="panel-text">LINEポイント100ptプレゼント</span>
+          </div>     -->
+
     </div>
     <!-- /panel-slide -->
     <div class="present-btn">
-            <span class="text">応募可能なプレゼント一覧 </span>
+            <p class="text">応募可能なプレゼント一覧 </p>
     </div>
 </div> 
 <!-- /present -->
 
 <div class="contact">
+
     <div class="contact-title">
-        <span class="present">CONTACT</span>
-        <span class="text">お問い合わせ</span>
+        <p class="present-text">CONTACT</p>
+        <p class="present-subtitle">お問い合わせ</p>
     </div>
+    
+    <!-- <div class="contact-title">
+        <p class="present">CONTACT</p>
+        <p class="text">お問い合わせ</p>
+    </div> -->
+
     <div class="contact-button">
         <div class="button-half-left"><span class="button-half-text left">FAQ</span></div>
         <div class="button-half-right"><span class="button-half-text right">アプリの利用方法</span></div>
@@ -177,23 +231,71 @@
 
 
 </div>
+</div>
+<!-- /all content -->
+
+<div v-if="!status">
+    <div class="menuframe">
+        <img class="" src="../assets/img/line.svg" alt="Line" />
+        <div class="menu-home">
+            <img class="" src="../assets/img/icon-24/home.svg">
+            <span class="text">ホーム</span>
+        </div>
+        <img class="" src="../assets/img/line.svg" alt="Line" />
+        <div class="menu-home">
+            <img class="" src="../assets/img/icon-24/menu_barcode.svg">
+            <span class="text">バーコード読み取り</span>
+        </div>  
+        <img class="" src="../assets/img/line.svg" alt="Line" />
+        <div class="menu-home">
+            <img class="" src="../assets/img/icon-24/point.svg">
+            <span class="text">ポイント履歴</span>
+        </div>
+        <img class="" src="../assets/img/line.svg" alt="Line" />
+        <div class="menu-home">
+            <img class="" src="../assets/img/icon-24/present.svg">
+            <span class="text">プレゼント一覧</span>
+        </div>  
+        <img class="" src="../assets/img/line.svg" alt="Line" />
+        <div class="menu-home">
+            <img class="" src="../assets/img/icon-24/box.svg">
+            <span class="text">受け取りBOX</span>
+        </div>
+        <img class="" src="../assets/img/line.svg" alt="Line" />    
+        
+        <div class="menu-button">
+        <div class="button-half-left"><span class="button-half-text left">FAQ</span></div>
+        <div class="button-half-right"><span class="button-half-text right">アプリの利用方法</span></div>
+    </div>
+    
+    </div>
+    
+</div>
+<!-- /menu content -->
 
 </template>
 <script>
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 export default {
 name:'ContentView',
+props:['status'],
 components: {
-Carousel,
-Slide,
-Navigation,
+    Carousel,
+    Slide,
+    Navigation,
 },
 setup() {
+    
     return {
-        // carousel settings
+        //carousel settings
         settings: {
             itemsToShow: 2.5,
-            snapAlign: "center"
+            snapAlign: "center",
+            infinite: true,
+            wrapAround: true,
+            transition: 300,
+            // autoplay: true,
+            // autoplaySpeed: 1000
         },
         // breakpoints are mobile first
         // any settings not specified will fallback to the carousel settings
@@ -201,7 +303,7 @@ setup() {
             // 700px and up
             700: {
                 itemsToShow: 2.5,
-                snapAlign: "center"
+                snapAlign: "center",
             },
             
         }

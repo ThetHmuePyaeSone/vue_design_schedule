@@ -5,19 +5,19 @@
         <img v-if="!status" class="menu" src="../assets/img/close.png" @click="closeclick" />
     </div>
     <Content :status="status" />
-    <Footer :status="status" />
+    <!-- <Footer :status="status" /> -->
     
 </template>
 <script>
 import Content from './Content.vue'
-import Footer from './Footer.vue'
+// import Footer from './Footer.vue'
 import { ref } from 'vue'
 
 export default {
     name:'HeaderView',
     components:{
         Content,
-        Footer
+        // Footer
     },
     setup(){
 

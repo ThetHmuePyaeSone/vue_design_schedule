@@ -10,10 +10,9 @@ font-family: 'Barlow Condensed';
 font-style: normal;
 font-weight: 700;
 text-align: center;
-text-transform: uppercase;
 color: #FFFFFF;
-position: absolute;
-top: 512px;
+/* position: absolute;
+top: 512px; */
 
 display: flex;
 justify-content: space-around;
@@ -22,6 +21,7 @@ width: 100%;
 }
 .title{
     width: 100%;
+    position: relative;
 /* width: 375px; */
 }
 
@@ -39,63 +39,46 @@ top: 140px;
 }
 
 .year{
-    position: absolute;
-    width: 29px;
+    text-align: center;
     height: 19px;
-    left: 177px;
     font-size: 16px;
     line-height: 23px;
 }
 
 .day{
-    position: absolute;
     width: 29px;
     height: 39px;
-    left: 177px;
     font-size: 32px;
     line-height: 38px;
     }
 
 .pre{
-    position: absolute;
     width: 40px;
     height: 21px;
-    left: 35px;
-    top: 21px;
 }
 
 .prearrow{
-position: absolute;
-left: 21px;
-top: 35px;
+padding-right: 7px;
 }
 
 .next{
-    position: absolute;
     width: 40px;
     height: 21px;
-    left: 300px;
-    top: 21px;
-}
-.nextarrow{
-    position: absolute;
-    left: 347px;
-    top: 35px;
+    padding-right: 7px;
 }
 
 .list{
-position: absolute;
-height: 352px;
-left: 16px;
-top: 78px;
-
+margin-bottom: 48px;
 }
 
 .item{
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid;
+    padding-bottom: 16px;
+    padding-top: 16px;
 
 }
 
@@ -109,16 +92,10 @@ flex-grow: 0;
 
 .frame-292{
 
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 2px;
-width: 189px;
-height: 59px;
-flex: none;
-order: 1;
-flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 189px;
 
 }
 
@@ -187,11 +164,11 @@ color: #C4C9D0;
 
 .present-content{
 
-gap: 24px;
+/* gap: 24px;
 position: absolute;
 width: 375px;
 height: 307px;
-top: 467px;
+top: 467px; */
 
 }
 
@@ -200,8 +177,6 @@ top: 467px;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-position: absolute;
-left: 16px;
 }
 
 .present-text{
@@ -228,7 +203,6 @@ margin: 2px 0;
 .present-slide{
 
 position: relative;
-top: 67px;
 
 }
 .slide-list{
@@ -504,8 +478,91 @@ flex: none;
 
 .menu-button{
     position: absolute;
-    /* width: 342.5px; */
     height: 56px;
     margin: 40px 16px 0;
     width: 92%;
+}
+
+.top_yellow{
+background: #C29B3E;
+box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+padding-bottom: 16px;
+margin-bottom: 16px;
+
+}
+
+.top_red{
+height: 112px;
+background: #D40019;
+box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+
+}
+
+.top_red span {
+    text-align: left;
+}
+
+.top_red .point {
+    text-align: right;
+}
+
+.top{
+    padding: 0 16px;
+    position: absolute;
+    top: 175px;
+}
+
+.yellow-text, .red-text{
+
+width: 303px;
+font-size: 16px;
+line-height: 16px;
+padding: 16px 20px;
+/* identical to box height, or 100% */
+
+text-align: center;
+}
+
+.yellow-text span, .red-text span  {
+    display: block;
+}
+
+.yellow-text .point, .red-text .point{
+    font-size: 56px;
+    /* border-bottom: 1px solid white; */
+    padding-bottom: 40px;
+    padding-top: 26px;
+}
+.point-line{
+    border-bottom: 1px solid white;
+}
+
+.show-month {
+    margin-top: 40px;
+    margin-bottom: 29px;
+}
+
+.show-month p {
+    text-align: center;
+}
+
+.show-month img {
+    height: 14px;
+}
+
+.month {   
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pre-month {
+    display: block;
+}
+
+.next-month {
+    display: block;
 }
