@@ -1,42 +1,4 @@
-@font-face {
-    font-family: 'A-OTF Midashi Go MB31 Pro MB31';
-    font-weight: 500;
-    src: url(../font/A-OTF\ Midashi\ Go\ MB31\ Pro\ MB31.otf);
-  }
-  
-  @font-face {
-    font-family: 'Barlow Condensed';
-    font-weight: 500;
-    src: url(../font/BarlowCondensed-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: 'Barlow Condensed';
-    font-weight: 600;
-    src: url(../font/BarlowCondensed-Medium.ttf);
-  }
-  @font-face {
-    font-family: 'Barlow Condensed';
-    font-weight: 700;
-    src: url(../font/BarlowCondensed-Bold.ttf);
-  }
 
-  @font-face {
-    font-family: 'Barlow Condensed';
-    font-weight: 500;
-    src: url(../font/BarlowCondensed-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: 'Barlow Condensed';
-    font-weight: 600;
-    src: url(../font/BarlowCondensed-Medium.ttf);
-  }
-  @font-face {
-    font-family: 'Barlow Condensed';
-    font-weight: 700;
-    src: url(../font/BarlowCondensed-Bold.ttf);
-  }
 body {
     color: #ffffff;
     font-family: 'Noto Sans JP', 'Barlow Condensed', 'A-OTF Midashi Go MB31 Pro';
@@ -50,6 +12,7 @@ body {
     width: 100%;
     color: #FFFFFF;
     background: url('../img/title.png') no-repeat, #000;
+    background-size: 100%;
 }
 
 .inner {
@@ -91,16 +54,19 @@ body {
     text-align: left;
 }
 
-.yellow-text .point,
-.red-text .point {
+.yellow-text .point {
     font-size: 56px;
+    font-family: 'Barlow Condensed';
+    /* //7.301vw */
 }
 
 .red-text .point{
+    font-size: 56px;
+    font-family: 'Barlow Condensed';
     text-align: right;
 }
 .border-line {
-    border-top: 1px solid white;
+    border-top: 1px solid #ffffff;
     padding-top: 20px;
     display: flex;
     align-items: baseline;
@@ -134,6 +100,7 @@ body {
     height: 19px;
     font-size: 16px;
     line-height: 23px;
+    font-family: 'Barlow Condensed';
 }
 
 .month {
@@ -148,6 +115,7 @@ body {
     height: 39px;
     font-size: 32px;
     line-height: 38px;
+    font-family: 'Barlow Condensed';
 }
 
 .pre-month {
@@ -203,6 +171,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     color: #C4C9D0;
+    font-family: 'Barlow Condensed';
 
 }
 
@@ -292,7 +261,7 @@ body {
     font-size: 24px;
     letter-spacing: -0.08em;
     color: #FFFFFF;
-    margin: 2px 0;
+    margin: 2px 0 8px;
 }
 
 .present-slide {
@@ -401,14 +370,14 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 20px;
     text-align: center;
     color: #FFFFFF;
 }
 
 /* /slide */
 .carousel__item {
-    color: white;
+    color: #ffffff;
 }
 
 .carousel__slide {
@@ -418,25 +387,28 @@ body {
 .carousel__prev,
 .carousel__next {
     box-sizing: content-box;
-    border: 5px solid white;
+    border: 5px solid #ffffff;
     display: none !important;
 }
 
 /* /contact section */
-
 .contact-title {
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     left: 16px;
+    margin-bottom: 8px;
 }
 
 .contact-button {
     display: flex;
     justify-content: space-around;
     font-size: 14px;
-    column-gap: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    /* 1.825 */
+    column-gap:  14.5px;
 }
 
 .contact-title>.present {
@@ -468,46 +440,44 @@ body {
 
 .button-half-right {
 
-    border: 1px solid white;
-    padding: 12px 19px;
+    border: 2px solid #ffffff;
+    padding: 12px 8px;
     width: 163.5px;
 
 }
 
 /* menu section */
 .menuframe {
-    color: white;
+    color: #ffffff;
     background: #000;
+    height: 100vh;
 }
 
 .menu-inner{
-    padding: 36px 15px 162px 17px;
+  padding: 0px 15px 162px 17px;
+  margin-top: 36px;
 }
 
 .menu-inner ul{
     list-style-type: none;
     padding: 0;
     margin-bottom: 40px;
+    
 }
 
 .menu-inner ul li {
-    padding: 32px 0 32px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 31px 0 31px 28px;
     display: flex;
     gap: 8px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff;
 }
 
 .menu-inner ul li:first-child{
-    border-top: 1px solid white;
+    border-top: 1px solid #ffffff;
 }
 
-.menu-trigger{
-    display: block;
-    position: absolute;
-    top: 2.194vw;
-    left: 0.781vw;
-    z-index: 1;
-    width: 7.812vw;
-    height: 6.875vw;
-    transform: scale(0.4);
+.font-barlow{
+  font-family: 'Barlow Condensed';
 }

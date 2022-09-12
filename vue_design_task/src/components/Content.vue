@@ -161,7 +161,7 @@
 
         <div class="contact-button">
           <div class="button-half-right">
-            <span>FAQ</span>
+            <span class="font-barlow">FAQ</span>
           </div>
           <div class="button-half-right">
             <span>アプリの利用方法</span>
@@ -174,7 +174,7 @@
   </div>
   <!-- /container log -->
 
-  <div v-if="!status" class="menuframe is-show">
+  <div v-if="!status" class="menuframe">
     <transition name="slide-fade">
       <div class="menu-inner">
         <ul>
@@ -201,7 +201,7 @@
 
         <div class="contact-button">
           <div class="button-half-right">
-            <span>FAQ</span>
+            <span class="font-barlow">FAQ</span>
           </div>
           <div class="button-half-right">
             <span>アプリの利用方法</span>

@@ -1,13 +1,13 @@
 <template>
     <div class="header">
         <img class="vector" src="../assets/img/wilkinson_logo.png" />
-       
+        <div>
             <div :class="triggerclass" @click="click">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
+        </div>
            
         
     </div>
