@@ -1,0 +1,513 @@
+@font-face {
+    font-family: 'A-OTF Midashi Go MB31 Pro MB31';
+    font-weight: 500;
+    src: url(../font/A-OTF\ Midashi\ Go\ MB31\ Pro\ MB31.otf);
+  }
+  
+  @font-face {
+    font-family: 'Barlow Condensed';
+    font-weight: 500;
+    src: url(../font/BarlowCondensed-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Barlow Condensed';
+    font-weight: 600;
+    src: url(../font/BarlowCondensed-Medium.ttf);
+  }
+  @font-face {
+    font-family: 'Barlow Condensed';
+    font-weight: 700;
+    src: url(../font/BarlowCondensed-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Barlow Condensed';
+    font-weight: 500;
+    src: url(../font/BarlowCondensed-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Barlow Condensed';
+    font-weight: 600;
+    src: url(../font/BarlowCondensed-Medium.ttf);
+  }
+  @font-face {
+    font-family: 'Barlow Condensed';
+    font-weight: 700;
+    src: url(../font/BarlowCondensed-Bold.ttf);
+  }
+body {
+    color: #ffffff;
+    font-family: 'Noto Sans JP', 'Barlow Condensed', 'A-OTF Midashi Go MB31 Pro';
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.container {
+    width: 100%;
+    color: #FFFFFF;
+    background: url('../img/title.png') no-repeat, #000;
+}
+
+.inner {
+    padding: 140px 16px 59px;
+}
+
+/* /point yellow red */
+.top-yellow {
+
+    margin-bottom: 16px;
+    background: #C29B3E;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.top-red {
+    background: #D40019;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+}
+
+.yellow-text,
+.red-text {
+
+    width: 303px;
+    font-size: 16px;
+    padding: 16px 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.yellow-text span,
+.red-text span {
+    display: block;
+}
+
+.red-text span {
+    text-align: left;
+}
+
+.yellow-text .point,
+.red-text .point {
+    font-size: 56px;
+}
+
+.red-text .point{
+    text-align: right;
+}
+.border-line {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 16px 0 0;
+}
+
+.num-pt {
+    font-family: 'Barlow Condensed';
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* show month */
+
+.show-month {
+    margin-top: 40px;
+    margin-bottom: 29px;
+}
+
+.show-month p {
+    text-align: center;
+}
+
+.show-month img {
+    height: 14px;
+}
+
+.year {
+    text-align: center;
+    height: 19px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.month {
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day {
+    width: 29px;
+    height: 39px;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.pre-month {
+    display: block;
+}
+
+.prearrow {
+    padding-right: 7px;
+}
+
+
+.next-month {
+    display: block;
+}
+
+.next {
+    padding-right: 7px;
+}
+
+/* list */
+.list {
+    margin-bottom: 48px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid;
+    padding-bottom: 16px;
+    padding-top: 16px;
+
+}
+
+.thumbnail-80 {
+    width: 60px;
+    height: 59px;
+}
+
+.frame-292 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 189px;
+
+}
+
+
+.frame-date {
+    width: 47px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #C4C9D0;
+
+}
+
+.frame-text {
+
+    width: 160px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.pt {
+
+    width: 78px;
+    height: 34px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.pt-text {
+
+    height: 22px;
+    top: 9px;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #C29B3E;
+}
+
+.pt-minus {
+
+    height: 22px;
+    top: 9px;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #C4C9D0;
+
+}
+
+/* present  slide */
+
+.present-content {
+    margin-bottom: 48px;
+
+}
+
+.present-title {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.present-text {
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 1px 0;
+    color: #C29B3E;
+}
+
+.present-subtitle {
+
+    height: 40px;
+    font-family: 'A-OTF Midashi Go MB31 Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.08em;
+    color: #FFFFFF;
+    margin: 2px 0;
+}
+
+.present-slide {
+    margin-bottom: 24px;
+
+}
+
+.present-panel {
+
+    width: 160px;
+    height: 160px;
+    background: #D40019;
+    flex: none;
+}
+
+.present-panel li:first-child {
+    margin-left: -6px;
+}
+
+.panel-img {
+    position: relative;
+    width: 155px;
+    height: 100px;
+    top: 1px;
+}
+
+.img-text {
+
+    padding: 12px 24px;
+     position: absolute;
+     top: 0px;
+ 
+ }
+
+.img-frame {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 104px;
+    height: 75px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.img-frame>.group {
+
+    width: 22.85px;
+    height: 23.15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.frame-pt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 85.85px;
+    height: 53px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.frame-pt>.text {
+    width: 59px;
+    height: 53px;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.1043px;
+    line-height: 53px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.panel-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 133px;
+    padding-left: 10px;
+    top: 109px;
+    font-size: 13px;
+
+}
+
+
+.present-btn {
+    border: 2px solid #FFFFFF;
+}
+
+.present-btn>.text {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* /slide */
+.carousel__item {
+    color: white;
+}
+
+.carousel__slide {
+    margin: 0 17px !important;
+}
+
+.carousel__prev,
+.carousel__next {
+    box-sizing: content-box;
+    border: 5px solid white;
+    display: none !important;
+}
+
+/* /contact section */
+
+.contact-title {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 16px;
+}
+
+.contact-button {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    column-gap: 20px;
+}
+
+.contact-title>.present {
+
+    width: 53px;
+    height: 16px;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #C29B3E;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.contact-title>.text {
+    font-family: 'A-OTF Midashi Go MB31 Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: -0.08em;
+    color: #FFFFFF;
+}
+
+.button-half-right {
+
+    border: 1px solid white;
+    padding: 12px 19px;
+    width: 163.5px;
+
+}
+
+/* menu section */
+.menuframe {
+    color: white;
+    background: #000;
+}
+
+.menu-inner{
+    padding: 36px 15px 162px 17px;
+}
+
+.menu-inner ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.menu-inner ul li {
+    padding: 32px 0 32px 17px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid white;
+}
+
+.menu-inner ul li:first-child{
+    border-top: 1px solid white;
+}
+
+.menu-trigger{
+    display: block;
+    position: absolute;
+    top: 2.194vw;
+    left: 0.781vw;
+    z-index: 1;
+    width: 7.812vw;
+    height: 6.875vw;
+    transform: scale(0.4);
+}

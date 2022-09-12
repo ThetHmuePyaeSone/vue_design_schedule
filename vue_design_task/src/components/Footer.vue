@@ -1,24 +1,12 @@
 <template>
     <div class="navi" v-if="status">
-        <div class="home">
-            <img class="home-vector" src="../assets/img/icon-24/home.svg">
-            <span class="text">ホーム</span>
-            <img class="line" src="../assets/img/icon-24/Line_9.svg" />
-        </div>
-        <div class="barcode">
-            <img class="barcode-vector" src="../assets/img/icon-24/barcode.svg" />
-            <span class="text">バーコード読取</span>
-            <img class="line" src="../assets/img/icon-24/Line_9.svg" />
-        </div>
-        <div class="box">
-            <img class="box-vector" src="../assets/img/icon-24/box.svg" />
-            <span class="text">受け取りBOX</span>
-            <img class="line" src="../assets/img/icon-24/Line_9.svg" />
-        </div>
-        <div class="navi-present">
-            <img class="navi-present-vector" src="../assets/img/icon-24/present.svg" />
-            <span class="text">プレゼント一覧</span>
-        </div>
+        
+        <ul>
+            <li><img src="../assets/img/icon-24/home.svg">ホーム</li>
+            <li><img src="../assets/img/icon-24/barcode.svg" />バーコード読取</li>
+            <li><img src="../assets/img/icon-24/box.svg" />受け取りBOX</li>
+            <li><img src="../assets/img/icon-24/present.svg" />プレゼント一覧</li>
+        </ul>
       
     </div>
 </template>
