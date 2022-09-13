@@ -1,12 +1,11 @@
 <template>
     <div class="header">
         <img class="vector" src="../assets/img/wilkinson_logo.png" />
-        <div>
-            <div :class="triggerclass" @click="click">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="menu" >
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button' @click="status = !status"></div>
+            </label>
         </div>
            
         
@@ -30,21 +29,7 @@ export default {
     setup(){
 
         const status = ref(true);
-        const show=ref(true);
-        const triggerclass=ref('menu-trigger')
-        const click = (async() => {
-            console.log('s',status.value)
-            if(status.value === true){
-            triggerclass.value='menu-trigger active'
-            }else{
-            triggerclass.value='menu-trigger'
-            }
-            status.value = !status.value;
-            show.value = !show.value
-        })
-
-
-        return{ status , click, triggerclass, show }
+        return{ status }
     }
 }
 </script>

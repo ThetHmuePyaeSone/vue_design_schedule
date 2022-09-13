@@ -1,483 +1,543 @@
-
 body {
-    color: #ffffff;
-    font-family: 'Noto Sans JP', 'Barlow Condensed', 'A-OTF Midashi Go MB31 Pro';
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  color: #ffffff;
+  font-family: 'Noto Sans JP', 'Barlow Condensed', 'A-OTF Midashi Go MB31 Pro';
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 
+}
+
+.gold {
+  color: #C29B3E;
 }
 
 .container {
-    width: 100%;
-    color: #FFFFFF;
-    background: url('../img/title.png') no-repeat, #000;
-    background-size: 100%;
+  width: 100%;
+  color: #FFFFFF;
+  background: url('../img/title.png') no-repeat, #000;
+  background-size: 100%;
 }
 
 .inner {
-    padding: 140px 16px 59px;
+  padding: 140px 16px 59px;
 }
 
 /* /point yellow red */
 .top-yellow {
 
-    margin-bottom: 16px;
-    background: #C29B3E;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+  margin-bottom: 16px;
+  background: #C29B3E;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .top-red {
-    background: #D40019;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+  background: #D40019;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 
 }
 
 .yellow-text,
 .red-text {
-
-    width: 303px;
-    font-size: 16px;
-    padding: 16px 18px;
-    font-weight: 700;
-    text-align: center;
+  padding: 1rem 1.125rem;
+  font-size: 4.267vw;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .yellow-text span,
 .red-text span {
-    display: block;
+  /* line-height: 16px; */
+  display: block;
 }
 
 .red-text span {
-    text-align: left;
+  text-align: left;
 }
 
 .yellow-text .point {
-    font-size: 56px;
-    font-family: 'Barlow Condensed';
-    /* //7.301vw */
+  font-size: 14.933vw;
+  font-family: 'Barlow Condensed';
+  line-height: 56px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: center;
 }
 
-.red-text .point{
-    font-size: 56px;
-    font-family: 'Barlow Condensed';
-    text-align: right;
+.red-text .point {
+  font-size: 14.933vw;
+  font-family: 'Barlow Condensed';
+  text-align: right;
+  line-height: 56px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: flex-end;
 }
+
 .border-line {
-    border-top: 1px solid #ffffff;
-    padding-top: 20px;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    margin: 16px 0 0;
+  border-top: 1px solid #ffffff;
+  padding-top: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: 16px 0 0;
+  line-height: 23px;
+  font-size: 4.267vw;
+}
+
+.num {
+  font-family: 'Barlow Condensed';
+  font-weight: 600;
+  font-size: 6.4vw;
+  line-height: 29px;
 }
 
 .num-pt {
-    font-family: 'Barlow Condensed';
-    font-weight: 600;
-    font-size: 24px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.267vw;
+  line-height: 19px;
+}
+
+.point-pt {
+  font-family: 'Barlow Condensed';
+  font-weight: 600;
+  font-size: 9.6vw;
+  line-height: 36px;
+}
+
+.number-pt {
+  font-size: 4.8vw;
+  font-weight: 600;
+  line-height: 22px;
 }
 
 /* show month */
 
 .show-month {
-    margin-top: 40px;
-    margin-bottom: 29px;
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
 
 .show-month p {
-    text-align: center;
+  text-align: center;
 }
 
 .show-month img {
-    height: 14px;
+  height: 14px;
 }
 
 .year {
-    text-align: center;
-    height: 19px;
-    font-size: 16px;
-    line-height: 23px;
-    font-family: 'Barlow Condensed';
+  text-align: center;
+  font-size: 4.267vw;
+  font-weight: 700;
+  line-height: 19px;
+  font-family: 'Barlow Condensed';
 }
 
 .month {
-    margin-top: -10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .day {
-    width: 29px;
-    height: 39px;
-    font-size: 32px;
-    line-height: 38px;
-    font-family: 'Barlow Condensed';
+  width: 29px;
+  font-weight: 700;
+  font-size: 8.533vw;
+  line-height: 38px;
+  font-family: 'Barlow Condensed';
 }
 
 .pre-month {
-    display: block;
+  display: block;
+  font-size: 4.267vw;
+  font-weight: 700;
+  line-height: 23px;
 }
 
 .prearrow {
-    padding-right: 7px;
+  padding-right: 7px;
 }
 
-
 .next-month {
-    display: block;
+  display: block;
+  font-size: 4.267vw;
+  font-weight: 700;
+  line-height: 23px;
 }
 
 .next {
-    padding-right: 7px;
+  padding-right: 7px;
 }
 
 /* list */
 .list {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    border-bottom: 1px solid;
-    padding-bottom: 16px;
-    padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid;
+  padding-bottom: 16px;
+  padding-top: 16px;
 
 }
 
 .thumbnail-80 {
-    width: 60px;
-    height: 59px;
+  width: 60px;
+  height: 60px;
 }
 
-.frame-292 {
+.pointlog-frame {
 
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    width: 189px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 50.4vw;
+  /* 189 width */
 
 }
-
 
 .frame-date {
-    width: 47px;
-    font-weight: 600;
-    font-size: 14px;
-    color: #C4C9D0;
-    font-family: 'Barlow Condensed';
+  display: flex;
+  font-weight: 600;
+  font-size: 3.733vw;
+  line-height: 17px;
+  color: #C4C9D0;
+  font-family: 'Barlow Condensed';
 
 }
 
 .frame-text {
 
-    width: 160px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.267vw;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 
-.pt {
-
-    width: 78px;
-    height: 34px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+.pointlog-pt {
+  width: 20.8vw;
+  /* 78 width */
+  height: 34px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7.467vw;
 }
 
-.pt-text {
-
-    height: 22px;
-    top: 9px;
-
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: right;
-    color: #C29B3E;
+.pointlog-number {
+  font-weight: 700;
+  line-height: 34px;
+  margin: 0;
 }
 
-.pt-minus {
-
-    height: 22px;
-    top: 9px;
-
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: right;
-    color: #C4C9D0;
-
+.pointlog-pt-text {
+  height: 22px;
+  top: 9px;
+  line-height: 34px;
+  text-align: right;
 }
 
 /* present  slide */
 
 .present-content {
-    margin-bottom: 48px;
-
+  margin-bottom: 48px;
 }
 
 .present-title {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .present-text {
 
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    text-transform: uppercase;
-    margin: 1px 0;
-    color: #C29B3E;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 1px 0;
+  line-height: 19px;
+  font-size: 4.267vw;
+  font-weight: 700;
+  color: #C29B3E;
 }
 
 .present-subtitle {
 
-    height: 40px;
-    font-family: 'A-OTF Midashi Go MB31 Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    letter-spacing: -0.08em;
-    color: #FFFFFF;
-    margin: 2px 0 8px;
+  font-family: 'A-OTF Midashi Go MB31 Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6.4vw;
+  line-height: 40px;
+  letter-spacing: -0.08em;
+  color: #FFFFFF;
+  margin: 2px 0 8px;
 }
 
 .present-slide {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
 }
 
 .present-panel {
-
-    width: 160px;
-    height: 160px;
-    background: #D40019;
-    flex: none;
+  width: 42.667vw;
+  height: 160px;
+  background: #D40019;
+  flex: none;
+  padding: 1%;
 }
 
 .present-panel li:first-child {
-    margin-left: -6px;
+  margin-left: -6px;
 }
 
 .panel-img {
-    position: relative;
-    width: 155px;
-    height: 100px;
-    top: 1px;
+  position: relative;
+  width: 41.333vw;
+  height: 100px;
 }
 
 .img-text {
 
-    padding: 12px 24px;
-     position: absolute;
-     top: 0px;
- 
- }
+  padding: 12px 24px;
+  position: absolute;
+  top: 0px;
+
+}
 
 .img-frame {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    width: 104px;
-    height: 75px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 104px;
+  height: 75px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.line-text {
+  font-family: 'A-OTF Midashi Go MB31 Pro';
+  font-weight: 600;
+  font-size: 4.267vw;
+  line-height: 22px;
 }
 
 .img-frame>.group {
-
-    width: 22.85px;
-    height: 23.15px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  width: 22.85px;
+  height: 23.15px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 
 .frame-pt {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 4px;
-    width: 85.85px;
-    height: 53px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: 78.85px;
+  height: 53px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .frame-pt>.text {
-    width: 59px;
-    height: 53px;
+  width: 52px;
+  height: 53px;
 
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 44.1043px;
-    line-height: 53px;
-    color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.733vw;
+  line-height: 53px;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 
 .panel-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 133px;
-    padding-left: 10px;
-    top: 109px;
-    font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+  font-size: 3.467vw;
+  line-height: 14px;
+  font-weight: 700;
 
 }
 
 
 .present-btn {
-    border: 2px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
 }
 
 .present-btn>.text {
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.267vw;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /* /slide */
 .carousel__item {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .carousel__slide {
-    margin: 0 17px !important;
+  margin: 0 4.533vw !important;
 }
 
 .carousel__prev,
 .carousel__next {
-    box-sizing: content-box;
-    border: 5px solid #ffffff;
-    display: none !important;
+  box-sizing: content-box;
+  border: 5px solid #ffffff;
+  display: none !important;
 }
 
 /* /contact section */
 .contact-title {
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    left: 16px;
-    margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 16px;
+  margin-bottom: 8px;
+}
+
+.contact-text {
+
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 1px 0;
+  line-height: 16px;
+  font-size: 4.267vw;
+  font-weight: 700;
+  color: #C29B3E;
+}
+
+.contact-subtitle {
+
+  font-family: 'A-OTF Midashi Go MB31 Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6.4vw;
+  line-height: 48px;
+  letter-spacing: -0.08em;
+  color: #FFFFFF;
+  margin: 2px 0 8px;
 }
 
 .contact-button {
-    display: flex;
-    justify-content: space-around;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 28px;
-    /* 1.825 */
-    column-gap:  14.5px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3.733vw;
+  font-weight: 700;
+  line-height: 16px;
+  column-gap: 14.5px;
 }
 
 .contact-title>.present {
-
-    width: 53px;
-    height: 16px;
-
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #C29B3E;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  width: 53px;
+  height: 16px;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.267vw;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #C29B3E;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .contact-title>.text {
-    font-family: 'A-OTF Midashi Go MB31 Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 48px;
-    letter-spacing: -0.08em;
-    color: #FFFFFF;
+  font-family: 'A-OTF Midashi Go MB31 Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6.4vw;
+  line-height: 48px;
+  letter-spacing: -0.08em;
+  color: #FFFFFF;
 }
 
 .button-half-right {
 
-    border: 2px solid #ffffff;
-    padding: 12px 8px;
-    width: 163.5px;
-
+  border: 2px solid #ffffff;
+  padding: 18px 8px;
+  width: 163.5px;
 }
 
 /* menu section */
+
 .menuframe {
-    color: #ffffff;
-    background: #000;
-    height: 100vh;
+  color: #ffffff;
+  background: #000;
+  min-height: 100vh;
 }
 
-.menu-inner{
+.menu-inner {
   padding: 0px 15px 162px 17px;
   margin-top: 36px;
 }
 
-.menu-inner ul{
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 40px;
-    
+.menu-inner ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+
 }
 
 .menu-inner ul li {
-    font-weight: 500;
-    font-size: 16px;
-    padding: 31px 0 31px 28px;
-    display: flex;
-    gap: 8px;
-    border-bottom: 1px solid #ffffff;
+  font-weight: 500;
+  font-size: 4.267vw;
+  padding: 29px 0 29px 28px;
+  border-bottom: 1px solid #ffffff;
+}
+.menu-inner ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  gap: 8px;
+  display: flex;
+}
+.menu-inner ul li:first-child {
+  border-top: 1px solid #ffffff;
 }
 
-.menu-inner ul li:first-child{
-    border-top: 1px solid #ffffff;
-}
-
-.font-barlow{
+.font-barlow {
   font-family: 'Barlow Condensed';
+  font-weight: 600;
 }

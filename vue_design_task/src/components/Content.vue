@@ -4,16 +4,22 @@
       <div class="top-yellow">
         <div class="yellow-text">
           <span>あなたの累計ポイント数</span>
-          <span class="point">1,000 pt</span>
+          <p class="point">1,000
+            <span class="point-pt">pt</span>
+          </p>
           <p class="border-line">
-            あと<span class="num-pt">0000pt</span>ポイントでランクアップ
+            あと<span class="num">0000</span>
+            <span class="num-pt">pt</span>
+            ポイントでランクアップ
           </p>
         </div>
       </div>
       <div class="top-red">
         <div class="red-text">
           <span>あなたの現在の所持ポイント数</span>
-          <span class="point">1,000 pt</span>
+          <p class="point">1,000
+            <span class="point-pt">pt</span>
+          </p>
         </div>
       </div>
 
@@ -38,64 +44,64 @@
       <div class="list">
         <div class="item">
           <img class="thumbnail-80" src="../assets/img/rect_wilkinson.png" />
-          <div class="frame-292">
+          <div class="pointlog-frame">
             <span class="frame-date">2022/9/2</span>
             <span class="frame-text">ウィルキンソン炭酸水</span>
             <span class="frame-text">500ml</span>
           </div>
-          <div class="pt">
-            <div class="pt-text">
+          <div class="pointlog-pt">
+            <div class="pointlog-pt-text gold">
               <span>+</span>
-              <span>1000</span>
-              <span>pt</span>
+              <span class="pointlog-number">1000</span>
+              <span class="number-pt">pt</span>
             </div>
           </div>
         </div>
 
         <div class="item">
           <img class="thumbnail-80" src="../assets/img/rect_line.png" />
-          <div class="frame-292">
+          <div class="pointlog-frame">
             <span class="frame-date">2022/9/2</span>
             <span class="frame-text">LINE POINT</span>
             <span class="frame-text">XXpt</span>
           </div>
-          <div class="pt">
-            <div class="pt-minus">
+          <div class="pointlog-pt white">
+            <div class="pointlog-pt-text ">
               <span>-</span>
-              <span>20</span>
-              <span>pt</span>
+              <span class="pointlog-number">20</span>
+              <span class="number-pt">pt</span>
             </div>
           </div>
         </div>
 
         <div class="item">
           <img class="thumbnail-80" src="../assets/img/rect_wilkinson.png" />
-          <div class="frame-292">
+          <div class="pointlog-frame">
             <span class="frame-date">2022/9/2</span>
             <span class="frame-text">ウィルキンソン炭酸水</span>
             <span class="frame-text">500ml</span>
           </div>
-          <div class="pt">
-            <div class="pt-text">
+          <div class="pointlog-pt">
+            <div class="pointlog-pt-text gold">
               <span>+</span>
-              <span>1000</span>
-              <span>pt</span>
+              <span class="pointlog-number">1000</span>
+              <span class="number-pt">pt</span>
             </div>
           </div>
         </div>
 
         <div class="item">
           <img class="thumbnail-80" src="../assets/img/rect_line.png" />
-          <div class="frame-292">
+          <div class="pointlog-frame">
             <span class="frame-date">2022/9/2</span>
             <span class="frame-text">LINE POINT</span>
             <span class="frame-text">XXpt</span>
           </div>
-          <div class="pt">
-            <div class="pt-minus">
+          <div class="pointlog-pt">
+            <div class="pointlog-pt-text white">
               <span>-</span>
-              <span>20</span>
-              <span>pt</span>
+              <span class="pointlog-number">20</span>
+              <span class="number-pt">pt</span>
             </div>
           </div>
         </div>
@@ -111,7 +117,6 @@
         <div class="present-slide">
           <carousel
             :settings="settings"
-            :breakpoints="breakpoints"
             :items-to-show="2.5"
           >
             <slide v-for="slide in 5" :key="slide">
@@ -124,7 +129,7 @@
 
                 <div class="img-text">
                   <div class="img-frame">
-                    <span class="text">LINEポイント</span>
+                    <span class="line-text">LINEポイント</span>
                     <div class="frame-pt">
                       <img
                         class="group"
@@ -155,8 +160,8 @@
 
       <div>
         <div class="contact-title">
-          <p class="present-text">CONTACT</p>
-          <p class="present-subtitle">お問い合わせ</p>
+          <p class="contact-text">CONTACT</p>
+          <p class="contact-subtitle">お問い合わせ</p>
         </div>
 
         <div class="contact-button">
@@ -175,27 +180,30 @@
   <!-- /container log -->
 
   <div v-if="!status" class="menuframe">
-    <transition name="slide-fade">
       <div class="menu-inner">
         <ul>
-          <li><img class="" src="../assets/img/icon-24/home.svg" />ホーム</li>
+          <li><a href=""><img class="" src="../assets/img/icon-24/home.svg" />ホーム</a></li>
           <li>
+            <a href="">
             <img
               class=""
               src="../assets/img/icon-24/menu_barcode.svg"
             />バーコード読み取り
+            </a>
           </li>
           <li>
-            <img class="" src="../assets/img/icon-24/point.svg" />ポイント履歴
+            <a href=""><img class="" src="../assets/img/icon-24/point.svg" />ポイント履歴</a>
           </li>
           <li>
+            <a href="">
             <img
               class=""
               src="../assets/img/icon-24/present.svg"
             />プレゼント一覧
+            </a>
           </li>
           <li>
-            <img class="" src="../assets/img/icon-24/box.svg" />受け取りBOX
+            <a href=""><img class="" src="../assets/img/icon-24/box.svg" />受け取りBOX</a>
           </li>
         </ul>
 
@@ -208,7 +216,6 @@
           </div>
         </div>
       </div>
-    </transition>
   </div>
   <!-- /menu content -->
 </template>
