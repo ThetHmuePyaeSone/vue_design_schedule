@@ -65,8 +65,8 @@
             <span class="frame-text">LINE POINT</span>
             <span class="frame-text">XXpt</span>
           </div>
-          <div class="pointlog-pt white">
-            <div class="pointlog-pt-text ">
+          <div class="pointlog-pt">
+            <div class="pointlog-pt-text">
               <span>-</span>
               <span class="pointlog-number">20</span>
               <span class="number-pt">pt</span>
@@ -78,7 +78,7 @@
           <img class="thumbnail-80" src="../assets/img/rect_wilkinson.png" />
           <div class="pointlog-frame">
             <span class="frame-date">2022/9/2</span>
-            <span class="frame-text">ウィルキンソン炭酸水</span>
+            <span class="frame-text">ウィルキンソン炭酸水ウィルキンソン炭酸水ウィルキンソン炭酸水ウィルキンソン炭酸水</span>
             <span class="frame-text">500ml</span>
           </div>
           <div class="pointlog-pt">
@@ -98,7 +98,7 @@
             <span class="frame-text">XXpt</span>
           </div>
           <div class="pointlog-pt">
-            <div class="pointlog-pt-text white">
+            <div class="pointlog-pt-text">
               <span>-</span>
               <span class="pointlog-number">20</span>
               <span class="number-pt">pt</span>
