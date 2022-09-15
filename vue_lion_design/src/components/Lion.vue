@@ -8,28 +8,38 @@
       <div class="inner-bar pc">
         <ul>
           <li>
-            <a href=""
+            <a class="" href=""
               >衛生のきほん
-              <figure><img src="../assets/img/img_dropdown.png" /></figure
-            ></a>
+              <!-- <div class="triangle triangle-bottom"></div> -->
+            <figure class="">
+                <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
+                <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
+                </figure>
+              </a>
           </li>
           <li>
             <a href=""
               >衛生のはなし
-              <figure><img src="../assets/img/img_dropdown.png" /></figure
-            ></a>
+              <figure class="">
+                <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
+                <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
+                </figure></a>
           </li>
           <li>
             <a href=""
               >衛生のなやみ
-              <figure><img src="../assets/img/img_dropdown.png" /></figure
-            ></a>
+              <figure class="">
+                <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
+                <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
+                </figure></a>
           </li>
           <li>
             <a href=""
               >衛生研究情報
-              <figure><img src="../assets/img/img_dropdown.png" /></figure
-            ></a>
+              <figure class="">
+                <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
+                <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
+              </figure></a>
           </li>
         </ul>
       </div>
@@ -41,15 +51,33 @@
       <div class="banner">
         <carousel ref="carousel" :item-to-show="1">
           <slide v-for="slide in 5" :key="slide">
-            <figure>  <span>見出しカラー#FFFにし、フォントサイズ36px。背景は#000(0.5)、テキストエリア横幅700pxに設定。文字数は64文字</span><img src="../assets/img/img_banner.png" /></figure>
+            <figure>
+              <span
+                >見出しカラー#FFFにし、フォントサイズ36px。背景は#000(0.5)、テキストエリア横幅700pxに設定。文字数は64文字</span
+              ><img src="../assets/img/img_banner.png" />
+            </figure>
             <!-- <span>見出しカラー#FFFにし、フォントサイズ36px。背景は#000(0.5)、テキストエリア横幅700pxに設定。文字数は64文字</span> -->
-
           </slide>
 
           <template #addons>
             <navigation />
-            <pagination></pagination>
-            <div class="next-slide" @click="next"></div>
+            <ol class="carousel__pagination">
+              <li  v-for="slide in 5" :key="slide"  class="carousel__pagination-item">
+                <button
+                  type="button"
+                  class="carousel__pagination-button"
+                  aria-label="Navigate to slide 1"
+                ></button>
+
+              </li>
+              <li class="carousel__pagination-item"><button
+                  type="button"
+                  class="tri-icon"
+                  aria-label="Navigate to slide 1"
+                ></button></li>
+            </ol>
+            <!-- <pagination></pagination> -->
+            <!-- <div class="next-slide" @click="next"></div> -->
           </template>
         </carousel>
       </div>
@@ -70,20 +98,44 @@
           <carousel ref="carousel" :items-to-show="3">
             <slide v-for="slide in 6" :key="slide">
               <div class="content-slide">
-                <img src="../assets/img/img-mask1.png" alt="" />
-                <div class="content-text">
+                <figure>
+                  <div>
+                  <img src="../assets/img/img-mask1.png" alt="" />
+                  <div class="content-text">
                   <button class="content-button">歯磨き</button>
                   <span
                     >感染の入り口＝お口を清潔に保つ～ウイルスが気になる季節に～</span
                   >
                 </div>
               </div>
+                </figure>
+                <!-- <div class="content-text">
+                  <button class="content-button">歯磨き</button>
+                  <span
+                    >感染の入り口＝お口を清潔に保つ～ウイルスが気になる季節に～</span
+                  >
+                </div> -->
+              </div>
             </slide>
 
             <template #addons>
               <navigation />
-              <pagination></pagination>
-              <div class="next-slide" @click="next"></div>
+              <ol class="carousel__pagination">
+              <li  v-for="slide in 6" :key="slide"  class="carousel__pagination-item">
+                <button
+                  type="button"
+                  class="carousel__pagination-button"
+                  aria-label="Navigate to slide 1"
+                ></button>
+
+              </li>
+              <li class="carousel__pagination-item"><button
+                  type="button"
+                  class="tri-icon"
+                  aria-label="Navigate to slide 1"
+                ></button></li>
+            </ol>
+              <!-- <div class="next-slide" @click="next"></div> -->
             </template>
           </carousel>
         </div>
@@ -121,7 +173,7 @@
   <!-- reserch container -->
 
   <div class="related-container">
-   <div class="container">
+    <div class="container">
       <div class="content-inner">
         <div class="content-title">
           <p class="subtitle">衛生のはなし</p>
@@ -132,57 +184,76 @@
             <img src="../assets/img/img-lion.png" alt="" />
             <div class="related-text">
               <span>ライオンハイジーン株式会社</span>
-              <figure><img src="../assets/img/img-export.png" alt=""></figure>
+              <figure class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="../assets/img/img-frontexport.png" alt="" />
+                <img class="swap-on-hover__back-image" src="../assets/img/img-backexport.png" alt="" />
+              </figure>
             </div>
           </div>
           <div class="related-site">
             <img src="../assets/img/img-tooth.png" alt="" />
             <div class="related-text">
               <span>日本歯科医師会</span>
-              <figure><img src="../assets/img/img-export.png" alt=""></figure>
+              <figure class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="../assets/img/img-frontexport.png" alt="" />
+                <img class="swap-on-hover__back-image" src="../assets/img/img-backexport.png" alt="" />
+              </figure>
             </div>
-            
           </div>
           <div class="related-site">
             <img src="../assets/img/img-stop.png" alt="" />
             <div class="related-text">
               <span>厚生労働省</span>
-              <figure><img src="../assets/img/img-export.png" alt=""></figure>
+              <figure class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="../assets/img/img-frontexport.png" alt="" />
+                <img class="swap-on-hover__back-image" src="../assets/img/img-backexport.png" alt="" />
+              </figure>
             </div>
           </div>
         </div>
       </div>
     </div>
-   </div>
+  </div>
 
-   <div class="footer-container">
+  <div class="footer-container">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-banner">
-         <div class="col-4"><img src="../assets/img/img_header.png" alt=""></div>
+          <div class="col-4">
+            <img src="../assets/img/img_header.png" alt="" />
+          </div>
           <div class="col-6">
             <ul>
-            <li>
-              <figure><img src="../assets/img/img_next.png" /></figure>
-              <a href="">利用規約</a>
-            </li>
-            <li>
-              <figure><img src="../assets/img/img_next.png" /></figure>
-              <a href="">個人情報等の保護について</a>
-            </li>
-          
-            <li>
-              <figure><img src="../assets/img/img_next.png" /></figure>
-              <a href="">ソーシャルメディアポリシー</a>
-            </li>
-          </ul>
+              <li>
+                <figure><img src="../assets/img/img_next.png" /></figure>
+                <a href="">利用規約</a>
+              </li>
+              <li>
+                <figure><img src="../assets/img/img_next.png" /></figure>
+                <a href="">個人情報等の保護について</a>
+              </li>
+
+              <li>
+                <figure><img src="../assets/img/img_next.png" /></figure>
+                <a href="">ソーシャルメディアポリシー</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-2"><figure><img src="../assets/img/img-up.png" alt="" /></figure></div>
+          <div class="col-2">
+            <!-- <span class="footer-icon"></span> -->
+            
+            <figure class="swap-on-hover">
+              <img class="swap-on-hover__front-image" src="../assets/img/img-frontfooter.png" alt="" />
+              <img class="swap-on-hover__back-image" src="../assets/img/img-backfooter.png" alt="" />
+            </figure>
+          </div>
         </div>
-       </div>
+      </div>
     </div>
-    <div class="footer-bar"><span>Copyright© 1996-2022 Lion Corporation. All rights reserved.</span></div>
-   </div>
+    <div class="footer-bar">
+      <span>Copyright© 1996-2022 Lion Corporation. All rights reserved.</span>
+    </div>
+  </div>
   <!-- footer-container -->
 </template>
 <script>
