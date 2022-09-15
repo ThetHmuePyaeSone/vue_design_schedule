@@ -2,7 +2,7 @@
   <div class="header-container">
     <div class="container">
       <div class="logo">
-        <figure><img src="../assets/img/img_header.png" alt="logo" /></figure>
+        <figure><img src="../assets/img/img-head.png" alt="logo" /></figure>
       </div>
       <span class="header-text">くらしの衛生情報</span>
       <div class="inner-bar pc">
@@ -220,7 +220,7 @@
       <div class="footer-inner">
         <div class="footer-banner">
           <div class="col-4">
-            <img src="../assets/img/img_header.png" alt="" />
+           <figure class="lion-2x"><img src="../assets/img/img-head.png" alt="" /></figure> 
           </div>
           <div class="col-6">
             <ul>
