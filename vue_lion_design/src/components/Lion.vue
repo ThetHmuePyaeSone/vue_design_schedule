@@ -10,7 +10,6 @@
           <li>
             <a class="" href=""
               >衛生のきほん
-              <!-- <div class="triangle triangle-bottom"></div> -->
             <figure class="">
                 <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
                 <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
@@ -43,6 +42,12 @@
           </li>
         </ul>
       </div>
+      <div class="menu sp">
+            <!-- <input id="menu-toggle" type="checkbox" /> -->
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button' @click="status = !status"></div>
+            </label>
+      </div>
     </div>
   </div>
   <!-- /header-container -->
@@ -50,34 +55,21 @@
     <div class="container">
       <div class="banner">
         <carousel ref="carousel" :item-to-show="1">
-          <slide v-for="slide in 5" :key="slide">
+          <slide v-for="slide in 3" :key="slide">
             <figure>
               <span
                 >見出しカラー#FFFにし、フォントサイズ36px。背景は#000(0.5)、テキストエリア横幅700pxに設定。文字数は64文字</span
               ><img src="../assets/img/img_banner.png" />
             </figure>
-            <!-- <span>見出しカラー#FFFにし、フォントサイズ36px。背景は#000(0.5)、テキストエリア横幅700pxに設定。文字数は64文字</span> -->
-          </slide>
+             </slide>
 
           <template #addons>
             <navigation />
-            <ol class="carousel__pagination">
-              <li  v-for="slide in 5" :key="slide"  class="carousel__pagination-item">
-                <button
-                  type="button"
-                  class="carousel__pagination-button"
-                  aria-label="Navigate to slide 1"
-                ></button>
-
-              </li>
-              <li class="carousel__pagination-item"><button
-                  type="button"
-                  class="tri-icon"
-                  aria-label="Navigate to slide 1"
-                ></button></li>
-            </ol>
-            <!-- <pagination></pagination> -->
-            <!-- <div class="next-slide" @click="next"></div> -->
+           
+            <div class="pagination">
+              <pagination></pagination>
+              <div class="next-slide" @click="next"></div>
+            </div>
           </template>
         </carousel>
       </div>
@@ -92,49 +84,31 @@
           <p class="title">今日から始めるよう！</p>
           <p class="subtitle">衛生のはなし</p>
           <p class="line"></p>
-          <p>気になる衛生情報や研究情報など</p>
+          <p class="info">気になる衛生情報や研究情報など</p>
         </div>
         <div class="content-banner">
-          <carousel ref="carousel" :items-to-show="3">
+          <carousel :breakpoints="breakpoints" ref="carousel" :items-to-show="3">
             <slide v-for="slide in 6" :key="slide">
               <div class="content-slide">
-                <figure>
-                  <div>
-                  <img src="../assets/img/img-mask1.png" alt="" />
-                  <div class="content-text">
-                  <button class="content-button">歯磨き</button>
-                  <span
-                    >感染の入り口＝お口を清潔に保つ～ウイルスが気になる季節に～</span
-                  >
-                </div>
-              </div>
-                </figure>
-                <!-- <div class="content-text">
-                  <button class="content-button">歯磨き</button>
-                  <span
-                    >感染の入り口＝お口を清潔に保つ～ウイルスが気になる季節に～</span
-                  >
-                </div> -->
+                    <figure>
+                      <img src="../assets/img/img-mask1.png" alt="" />
+                      <div class="content-text">
+                      <button class="content-button">歯磨き</button>
+                      <span
+                        >感染の入り口＝お口を清潔に保つ～ウイルスが気になる季節に～</span
+                      >
+                      </div>
+                    </figure>
+
               </div>
             </slide>
 
             <template #addons>
               <navigation />
-              <ol class="carousel__pagination">
-              <li  v-for="slide in 6" :key="slide"  class="carousel__pagination-item">
-                <button
-                  type="button"
-                  class="carousel__pagination-button"
-                  aria-label="Navigate to slide 1"
-                ></button>
-
-              </li>
-              <li class="carousel__pagination-item"><button
-                  type="button"
-                  class="tri-icon"
-                  aria-label="Navigate to slide 1"
-                ></button></li>
-            </ol>
+              <div class="pagination">
+              <pagination></pagination>
+              <div class="next-slide" @click="next"></div>
+              </div>
               <!-- <div class="next-slide" @click="next"></div> -->
             </template>
           </carousel>
@@ -155,9 +129,11 @@
           v-show="type === '' || media.type == type"
           v-bind:class="[media.showDetail ? 'less' : 'more', media.type]"
         >
-          <div class="">
-            <div class="col-4">{{ media.date }}</div>
-            <div class="col-8">
+          <div class="research-inner">
+            <div class="col-4 date">
+              {{ media.date }}
+            </div>
+            <div class="col-8 description">
               <div>{{ media.description }}</div>
               <div class="show-detail" v-show="media.showDetail">
                 <span>{{ media.show }}</span>
@@ -181,7 +157,9 @@
         </div>
         <div class="related-banner">
           <div class="related-site">
+          <figure class="related-img">
             <img src="../assets/img/img-lion.png" alt="" />
+          </figure>
             <div class="related-text">
               <span>ライオンハイジーン株式会社</span>
               <figure class="swap-on-hover">
@@ -191,7 +169,9 @@
             </div>
           </div>
           <div class="related-site">
+            <figure class="related-img">
             <img src="../assets/img/img-tooth.png" alt="" />
+            </figure>
             <div class="related-text">
               <span>日本歯科医師会</span>
               <figure class="swap-on-hover">
@@ -201,7 +181,9 @@
             </div>
           </div>
           <div class="related-site">
+            <figure class="related-img">
             <img src="../assets/img/img-stop.png" alt="" />
+            </figure>
             <div class="related-text">
               <span>厚生労働省</span>
               <figure class="swap-on-hover">
@@ -239,10 +221,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-2">
-            <!-- <span class="footer-icon"></span> -->
-            
-            <figure class="swap-on-hover">
+          <div class="footer-swap">
+           <figure class="swap-on-hover">
               <img class="swap-on-hover__front-image" src="../assets/img/img-frontfooter.png" alt="" />
               <img class="swap-on-hover__back-image" src="../assets/img/img-backfooter.png" alt="" />
             </figure>
@@ -260,6 +240,7 @@
 /* eslint-disable */
 import "../assets/css/reset.css";
 import "../assets/css/common.css";
+import "../assets/css/common_sp.css"
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import { ref } from "vue";
 const research = [
@@ -408,16 +389,20 @@ export default {
         snapAlign: "center",
       },
       breakpoints: {
-        // 700px and up
-        700: {
-          itemsToShow: 3.5,
+       
+        320:{
+          itemsToShow: 1,
+          snapAlign: "center"
+        },
+        414: {
+          itemsToShow: 1,
           snapAlign: "center",
         },
-        // 1024 and up
-        1024: {
-          itemsToShow: 5,
-          snapAlign: "start",
-        },
+        1280:{
+          itemsToShow: 3,
+          snapAlign: "center",
+        }
+        
       },
     };
   },
