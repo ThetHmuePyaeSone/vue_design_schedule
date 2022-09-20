@@ -71,7 +71,6 @@ a {
     float: left;
     margin-top: 43px;
     padding-left: 20px;
-    font-family: "Noto Sans JP";
     font-size: 20px;
     font-weight: 700;
     color: #00A05C;
@@ -90,7 +89,7 @@ a {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    padding-left: 49px;
+    padding-left: 61px;
 }
 
 .inner-bar ul li {
@@ -101,7 +100,6 @@ a {
 .inner-bar ul li a {
     position: relative;
     padding: 17px 0 17px 5px;
-    font-family: "Noto Sans JP";
     font-size: 16px;
     font-weight: 600;
 }
@@ -118,6 +116,7 @@ a {
     color: #00A05C;
     border-width: 10px 6px 0 6px;
     border-color: #00A05C transparent transparent transparent;
+    justify-content: center;
 }
 
 
@@ -167,7 +166,6 @@ a {
     bottom: 32px;
     padding-left: 44px;
     color: #ffffff;
-    font-family: "Noto Sans JP";
     font-size: 36px;
     font-weight: 700;
 }
@@ -268,7 +266,6 @@ a {
 .content-text span {
     text-align: left;
     padding-top: 20px;
-    font-family: "Noto Sans JP";
     font-size: 16px;
     font-weight: 700;
 }
@@ -278,7 +275,6 @@ a {
 
 .research-title {
     padding: 29px 0 0 0;
-    font-family: "Noto Sans JP";
     font-size: 20px;
     font-weight: 700;
 }
@@ -286,7 +282,7 @@ a {
 /* accordian */
 
 .research-container {
-    max-width: 80%;
+    /* max-width: 80%; */
     margin: auto;
     min-height: initial;
     position: relative;
@@ -321,13 +317,11 @@ a {
 
 .date {
     
-    font-family: 'Noto Sans JP';
     font-size: 12px;
     font-weight: 500;
 }
 
 .description {
-    font-family: 'Noto Sans JP';
     font-size: 16px;
     font-weight: 500;
 }
@@ -358,7 +352,7 @@ a {
 }
 
 .research-container ul {
-    width: 1120px;
+    /* width: 1120px; */
     list-style-type: none;
     padding-left: 0;
     border-radius: 5px;
@@ -388,7 +382,6 @@ a {
     flex-direction: column;
     padding-top: 20px;
     line-height: 20px;
-    font-family: "Noto Sans JP";
     font-size: 14px;
     font-weight: 500;
 }
@@ -426,7 +419,6 @@ a {
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    font-family: "Noto Sans JP";
     font-size: 12px;
     font-weight: 500;
 }
@@ -485,9 +477,7 @@ a {
 .footer-banner ul li {
     display: flex;
     gap: 10px;
-    font-family: "Noto Sans JP";
     font-size: 12px;
-    font-weight: 500;
 }
 
 .footer-banner ul li a:hover {
@@ -499,11 +489,13 @@ a {
     text-align: center;
     color: #ffffff;
     background: #00A05C;
+    line-height: 70px;
 }
 
 .footer-bar span {
-    line-height: 70px;
-    padding: 27px 0;
+    padding: 25px 0;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /* .footer-icon {
@@ -548,7 +540,10 @@ a {
 .carousel__next:hover {
     background: #00A05C !important;
 }
-
+.banner .carousel__icon{
+    width: 48px !important;
+    height: 48px !important;
+}
 .banner .carousel__prev {
     width: 48px;
     height: 48px;
@@ -557,6 +552,15 @@ a {
 .banner .carousel__next {
     width: 48px;
     height: 48px;
+}
+
+.content-banner .carousel__viewport{
+    overflow: inherit;
+}
+
+.content-banner .carousel__track{
+    /* transform: translateX(-227.938px) !important;
+    transition: all 0ms ease 0s !important; */
 }
 
 .carousel__icon {

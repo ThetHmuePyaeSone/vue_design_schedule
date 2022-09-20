@@ -1,3 +1,597 @@
 @media (min-width: 768px) and (max-width: 1280px) {
+
+    @font-face {
+        font-family: 'Hiragino Kaku Gothic Pro';
+        src: url('@/assets/fonts/Hiragino Kaku Gothic Pro W3.otf') format('truetype');
+    }
     
+
+    body {
+
+        font-family: 'Noto Sans JP','Hiragino Kaku Gothic Pro';
+        margin: 0;
+        background: #F7F7F7;
+    }
+    
+    a {
+        color: #000000;
+    }
+    
+    .col-8 {
+        width: 73.594vw;
+        /* width: 80%;
+        padding: 10px; */
+    }
+    
+    .col-4 {
+        float: left;
+        width: 20%;
+        padding: 0.781vw;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .pc {
+        display: block !important;
+    }
+    
+    .sp {
+        display: none !important;
+    }
+    
+    .header-container {
+    
+        background: #ffffff;
+        height: 8.594vw;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.078vw solid #707070;
+    }
+    
+    /* header section */
+    .container {
+        width: 100%;
+        max-width: 93.75vw;
+        margin: 0 auto;
+    
+    }
+    
+    .logo {
+        width: 9.219vw;
+        float: left;
+        margin-top: 1.953vw;
+    }
+    
+    .logo img {
+        width: 100%;
+    }
+    
+    .header-text {
+        float: left;
+        margin-top: 3.359vw;
+        padding-left: 1.563vw;
+        font-size: 1.563vw;
+        font-weight: 700;
+        color: #00A05C;
+    }
+    
+    .inner-bar {
+        width: 60.938vw;
+        background: #00A05C;
+        margin-top: 2.422vw;
+        border-radius: 3.906vw;
+        /* padding: 1.328vw 0; */
+        float: right;
+    }
+    
+    .inner-bar ul {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-left: 4.766vw;
+    }
+    
+    .inner-bar ul li {
+        width: 12.5vw;
+        padding-right: 3.984vw;
+    }
+    
+    .inner-bar ul li a {
+        position: relative;
+        padding: 1.328vw 0 1.328vw 0.391vw;
+        font-size: 1.25vw;
+        font-weight: 600;
+    }
+    
+    .inner-bar ul li a figure {
+    
+        /* overflow: hidden; */
+        padding-left: 0.391vw;
+    }
+    
+    .inner-bar ul li a:hover {
+        padding: 1.328vw 0 1.328vw 0.391vw;
+        background-color: #ffffff;
+        color: #00A05C;
+        border-width: 0.781vw 0.469vw 0 0.469vw;
+        border-color: #00A05C transparent transparent transparent;
+        justify-content: center;
+    }
+    
+    
+    .triangle {
+        position: relative;
+        float: left;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+    
+    .triangle-bottom {
+        border-width: 0.781vw 0.469vw 0 0.469vw;
+        border-color: #ffffff transparent transparent transparent;
+    }
+    
+    
+    .inner-bar ul li:last-child {
+        /* padding-right: 0; */
+    }
+    
+    .inner-bar ul li a {
+        color: #ffffff;
+        display: flex;
+    }
+    
+    /* banner section */
+    .banner-container {
+        background: #ffffff;
+    }
+    
+    .banner {
+        padding: 1.563vw;
+        /* padding-left: 3.125vw; */
+    }
+    
+    .banner img {
+        /* position: relative; */
+    }
+    
+    .banner span {
+        position: absolute;
+        width: 54.688vw;
+        text-align: left;
+        line-height: 3.906vw;
+        /* padding-top: 24.688vw; */
+        bottom: 2.5vw;
+        padding-left: 3.438vw;
+        color: #ffffff;
+        font-size: 2.813vw;
+        font-weight: 700;
+    }
+    
+    /* content */
+    .content-container {
+        background: #FFFDF8;
+    }
+    
+    .content-inner {
+        /* padding-left: 4.688vw; */
+        padding-bottom: 6.094vw;
+    }
+    
+    .title {
+        font-size: 1.563vw;
+        font-weight: 600;
+    }
+    
+    .subtitle {
+        font-size: 2.813vw;
+        font-weight: 600;
+        color: #00A05C;
+    }
+    
+    .info{
+        font-size: 1.25vw;
+        font-weight: 500;
+    }
+    
+    .content-title {
+        padding-top: 1.563vw;
+    }
+    
+    
+    .content-title p {
+        line-height: 3.047vw
+    }
+    
+    .line {
+        width: 17.5vw;
+        padding-top: 1.563vw;
+        border-bottom: 0.234vw solid #00A05C;
+    }
+    
+    .content-slide {
+        /* position: relative; */
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 26.563vw;
+        height: 27.266vw;
+        background: #ffffff;
+        flex: none;
+        box-shadow: 0 0.313vw 0.625vw 0 rgba(0, 0, 0, 0.2), 0 0.469vw 1.563vw 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .content-slide {
+        -webkit-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
+    }
+    
+    .content-slide:hover {
+        border: 0.078vw solid #0cb097;
+        color: #00A05C;
+    }
+    
+    .content-slide>figure:hover img {
+        transform: scale(1.1);
+    }
+    
+    .content-slide>figure {
+        overflow: hidden;
+    }
+    
+    .content-slide>figure img {
+        -webkit-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
+    }
+    
+    .content-text {
+        display: flex;
+        padding: 1.563vw;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .content-button {
+        border-radius: 2.344vw;
+        border: 0.078vw solid #00A05C;
+        color: #00A05C;
+        background: #FFFDF8;
+        font-family: "Hiragino Kaku Gothic Pro";
+        font-size: 1.094vw;
+        font-weight: 500;
+    }
+    
+    .content-text span {
+        text-align: left;
+        padding-top: 1.563vw;
+        font-size: 1.25vw;
+        font-weight: 700;
+    }
+    
+    /* research */
+    
+    
+    .research-title {
+        padding: 2.266vw 0 0 0;
+        font-size: 1.563vw;
+        font-weight: 700;
+    }
+    
+    /* accordian */
+    
+    .research-container {
+        /* max-width: 80%; */
+        margin: auto;
+        min-height: initial;
+        position: relative;
+    }
+    
+    .research-container>div {
+        padding-bottom: 2.344vw;
+    }
+    
+    
+    
+    .research-container {
+        max-width: 80%;
+        margin: auto;
+        min-height: initial;
+        position: relative;
+    }
+    
+    .research-container>div {
+        padding-bottom: 2.344vw;
+    }
+    
+    
+    .research-container h3 {
+        cursor: pointer;
+        display: inline;
+    }
+    
+    .research-container p {
+        color: #333;
+    }
+    
+    .date {
+        
+        font-size: 0.938vw;
+        font-weight: 500;
+    }
+    
+    .description {
+        font-size: 1.25vw;
+        font-weight: 500;
+    }
+    
+    .more:after {
+    
+        /* content: "\25BC"; */
+        content: url('../img/img-plus.png');
+        font-size: 0.625vw;
+        position: absolute;
+        right: 0.391vw;
+        top: 1%;
+        margin-top: -0.781vw;
+        font-size: 1.25vw;
+        color: #333;
+    }
+    
+    .less:after {
+        /* content: "\25B2"; */
+        content: url('../img/img-minus.png');
+        font-size: 0.625vw;
+        position: absolute;
+        right: 0.391vw;
+        top: 1%;
+        margin-top: -0.781vw;
+        font-size: 1.25vw;
+        color: #333;
+    }
+    
+    .research-container ul {
+        /* width: 87.5vw; */
+        list-style-type: none;
+        padding-left: 0;
+        border-radius: 0.391vw;
+        padding-top: 1.563vw;
+    
+    }
+    
+    .research-container ul li {
+        border: #eaeaea solid 0.078vw;
+        margin: 0.156vw 0;
+        padding: 1.172vw;
+        /* border-left: #95effe solid 0.391vw; */
+        position: relative;
+        background: #fff;
+        -webkit-box-shadow: 0 0.078vw 0.156vw rgba(0, 0, 0, 0.07);
+        -moz-box-shadow: 0 0.078vw 0.156vw rgba(0, 0, 0, 0.07);
+        box-shadow: 0 0.078vw 0.156vw rgba(0, 0, 0, 0.07);
+    }
+    
+    .research-container ul li:hover {
+        background: #00A05C;
+        color: #ffffff;
+    }
+    
+    .show-detail {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.563vw;
+        line-height: 1.563vw;
+        font-size: 1.094vw;
+        font-weight: 500;
+    }
+    
+    /* end accordian */
+    
+    /* related  */
+    .related-container {
+        background: #FFFDF8;
+    }
+    
+    .related-banner {
+        display: flex;
+        padding: 1.563vw 0 0 6.25vw;
+        gap: 3.047vw;
+    }
+    
+    .related-site {
+        width: 25vw;
+        height: 9.844vw;
+        background: #ffffff;
+        flex: none;
+    }
+    
+    .related-site img {
+        /* padding-bottom: 10px; */
+    }
+    
+    .related-site span:hover {
+        color: #00A05C;
+    }
+    
+    .related-text {
+        padding-top: 0.391vw;
+        padding-bottom: 0.781vw;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.938vw;
+        font-weight: 500;
+    }
+    
+    .swap-on-hover {
+        position: relative;
+    }
+    
+    .swap-on-hover img {
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+    }
+    
+    .swap-on-hover .swap-on-hover__front-image {
+        z-index: 9999;
+        transition: opacity .3s linear;
+        cursor: pointer;
+    }
+    
+    .swap-on-hover:hover>.swap-on-hover__front-image {
+        opacity: 0;
+    }
+    
+    /* footer  */
+    .footer-container {
+        background: #FFFDF8;
+        margin-top: 0.781vw;
+    }
+    
+    .footer-inner {
+        /* padding-left: 4.688vw; */
+        padding-bottom: 2.578vw;
+    }
+    
+    .footer-banner {
+        display: flex;
+        padding-top: 1.563vw;
+    
+    }
+    
+    .footer-banner div {
+        padding-right: 7.813vw;
+    }
+    
+    .lion-2x img {
+        width: 50%;
+    }
+    
+    .footer-banner ul {
+        display: flex;
+        gap: 1.563vw;
+        padding-top: 1.563vw;
+    }
+    
+    .footer-banner ul li {
+        display: flex;
+        gap: 0.781vw;
+        font-size: 0.938vw;
+    }
+    
+    .footer-banner ul li a:hover {
+        text-decoration: underline;
+        color: #00A05C;
+    }
+    
+    .footer-bar {
+        text-align: center;
+        color: #ffffff;
+        background: #00A05C;
+        line-height: 5.469vw;
+    }
+    
+    .footer-bar span {
+        padding: 1.953vw 0;
+        font-size: 0.938vw;
+        font-weight: 500;
+    }
+    
+  
+    
+    /* carousel */
+    .carousel__item {
+        color: #000000;
+    }
+    
+    .carousel__slide {
+        padding: 0.781vw !important;
+    }
+    
+    .carousel__prev,
+    .carousel__next {
+        background: #ffffff !important;
+        box-sizing: content-box;
+        border: 0.078vw solid #00A05C !important;
+    }
+    
+    .carousel__prev:hover,
+    .carousel__next:hover {
+        background: #00A05C !important;
+    }
+    .banner .carousel__icon{
+        width: 3.75vw !important;
+        height: 3.75vw !important;
+    }
+    .banner .carousel__prev {
+        width: 3.75vw;
+        height: 3.75vw;
+    }
+    
+    .banner .carousel__next {
+        width: 3.75vw;
+        height: 3.75vw;
+    }
+    
+    .content-banner .carousel__viewport{
+        overflow: inherit;
+    }
+    
+    .content-banner .carousel__track{
+        /* transform: translateX(-227.938px) !important;
+        transition: all 0ms ease 0s !important; */
+    }
+    
+    .carousel__icon {
+        color: #00A05C !important;
+    }
+    
+    .carousel__icon:hover {
+        color: #ffffff !important;
+    }
+    
+    .carousel__pagination-button {
+        background: #C3E6D3 !important;
+        border-radius: 50% !important;
+        height: 0.938vw !important;
+    }
+    
+    .carousel__pagination-button--active {
+        background: #00A05C !important;
+    }
+    
+  
+    .tri-icon {
+        width: 0;
+        height: 0;
+        border-top: 0.469vw solid transparent;
+        border-bottom: 0.469vw solid transparent;
+        border-left: 0.859vw solid #00A05C;
+        border-right: 0;
+    }
+    
+    
+    .next-slide {
+        width: 1.25vw;
+        height: 1.25vw;
+        /* position: absolute;
+        right: 42.188vw; */
+        bottom: 0.234vw;
+        background-image: url('../img/img_next.png');
+    }
+    
+    
+    .pagination {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+   
 }
