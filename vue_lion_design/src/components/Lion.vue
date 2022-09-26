@@ -10,35 +10,26 @@
           <li>
             <a class="" href=""
               >衛生のきほん
-            <figure class="">
-                <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
-                <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
-                </figure>
+              <i class="arrow"></i>
               </a>
           </li>
           <li>
             <a href=""
               >衛生のはなし
-              <figure class="">
-                <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
-                <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
-                </figure></a>
+              <i class="arrow"></i>
+            </a>
           </li>
           <li>
             <a href=""
               >衛生のなやみ
-              <figure class="">
-                <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
-                <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
-                </figure></a>
+              <i class="arrow"></i>
+              </a>
           </li>
           <li>
             <a href=""
               >衛生研究情報
-              <figure class="">
-                <img class="swap-on-hover__front-image" src="../assets/img/img-frontdrop.png" />
-                <img class="swap-on-hover__back-image" src="../assets/img/img-backdrop.png" />
-              </figure></a>
+              <i class="arrow"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -57,9 +48,13 @@
         <carousel ref="carousel" :item-to-show="1">
           <slide v-for="slide in 3" :key="slide">
             <figure>
-              <span
-                >見出しカラー#FFFにし、フォントサイズ36px。背景は#000(0.5)、テキストエリア横幅700pxに設定。文字数は64文字</span
-              ><img src="../assets/img/img_banner.png" />
+              <p class="pc">
+                見出しカラー#FFFにし、フォントサイズ36px。<br>
+                背景は#000(0.5)、テキストエリア横幅 <br> 
+                700pxに設定。文字数は64文字
+              </p>
+              <span class="sp">見出しカラー#FFFにし、フォントサイズ36px。背景は#000(0.5)、テキストエリア横幅700pxに設定。文字数は64文字</span>
+              <img src="../assets/img/img_banner.png" />
             </figure>
              </slide>
 
@@ -68,7 +63,7 @@
            
             <div class="pagination">
               <pagination></pagination>
-              <div class="next-slide" @click="next"></div>
+              <div class="arrow next-slide" @click="next"></div>
             </div>
           </template>
         </carousel>
@@ -83,7 +78,6 @@
         <div class="content-title">
           <p class="title">今日から始めるよう！</p>
           <p class="subtitle">衛生のはなし</p>
-          <p class="line"></p>
           <p class="info">気になる衛生情報や研究情報など</p>
         </div>
         <div class="content-banner">
@@ -92,13 +86,14 @@
               <div class="content-slide">
                     <figure>
                       <img src="../assets/img/img-mask1.png" alt="" />
-                      <div class="content-text">
+                      
+                    </figure>
+                    <div class="content-text">
                       <button class="content-button">歯磨き</button>
                       <span
                         >感染の入り口＝お口を清潔に保つ～ウイルスが気になる季節に～</span
                       >
                       </div>
-                    </figure>
 
               </div>
             </slide>
@@ -128,19 +123,18 @@
           v-show="type === '' || media.type == type"
           v-bind:class="[media.showDetail ? 'less' : 'more', media.type]"
         >
-          <div class="research-inner">
-            <div class="col-4 date">
+        <div class="acc-blk">
+            <span class="date">
               {{ media.date }}
-            </div>
-            <div class="col-8 description">
-              <div>{{ media.description }}</div>
-              <div class="show-detail" v-show="media.showDetail">
+            </span>
+            <p class="description">{{ media.description }}</p>
+        </div>
+
+            <div class="show-detail" v-show="media.showDetail">
                 <span>{{ media.show }}</span>
                 <span>{{ media.time }}</span>
                 <span>{{ media.place }}</span>
-              </div>
             </div>
-          </div>
         </li>
       </ul>
     </div>
@@ -151,8 +145,7 @@
     <div class="container">
       <div class="content-inner">
         <div class="content-title">
-          <p class="subtitle">衛生のはなし</p>
-          <p class="line"></p>
+          <p class="subtitle">関連サイト</p>
         </div>
         <div class="related-banner">
           <div class="related-site">
@@ -203,23 +196,23 @@
           <div class="col-4">
            <figure class="lion-2x"><img src="../assets/img/img-head.png" alt="" /></figure> 
           </div>
-          <div class="col-6">
+          
             <ul>
               <li>
-                <figure><img src="../assets/img/img_next.png" /></figure>
+                <!-- <span class="arrow footer-next"></span> -->
                 <a href="">利用規約</a>
               </li>
               <li>
-                <figure><img src="../assets/img/img_next.png" /></figure>
+                
                 <a href="">個人情報等の保護について</a>
               </li>
 
               <li>
-                <figure><img src="../assets/img/img_next.png" /></figure>
+               
                 <a href="">ソーシャルメディアポリシー</a>
               </li>
             </ul>
-          </div>
+         
           <div class="footer-swap">
            <figure class="swap-on-hover">
               <img class="swap-on-hover__front-image" src="../assets/img/img-frontfooter.png" alt="" />

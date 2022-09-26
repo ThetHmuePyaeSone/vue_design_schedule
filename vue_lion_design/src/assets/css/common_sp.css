@@ -68,7 +68,7 @@
         float: left;
         margin-top: 4.831vw;
         padding-left: 4.831vw;
-        color: #00A05C;
+        color: #00A051;
     }
 
     .inner-bar {
@@ -235,8 +235,6 @@
         text-align: left;
         line-height: 6.039vw;
         padding: 21.155vw 0 0 4.831vw;
-        /* padding-top: 24.155vw;
-        padding-left: 4.831vw; */
         color: #ffffff;
         font-style: "Noto Sans JP";
         font-size: 3.865vw;
@@ -413,7 +411,7 @@
         font-size: 1.932vw;
         position: absolute;
         right: -2.792vw;
-        top: 25%;
+        /* top: 25%; */
         margin-top: -2.415vw;
         font-size: 3.865vw;
         color: #333;
@@ -425,7 +423,7 @@
         font-size: 1.932vw;
         position: absolute;
         right: -2.792vw;
-        top: 25%;
+        /* top: 25%; */
         margin-top: -2.415vw;
         font-size: 3.865vw;
         color: #333;
@@ -480,7 +478,7 @@
 
     /* related  */
     .related-container {
-        background: #FFFDF8;
+        background: #FFFFFF;
     }
 
     .related-banner {
@@ -542,7 +540,7 @@
 
     /* footer  */
     .footer-container {
-        background: #FFFDF8;
+        background: #FFFFFF;
         margin-top: 2.415vw;
     }
 
@@ -605,7 +603,6 @@
         /* padding: 6.522vw 0 10.87vw 0; */
         padding: 6.039vw 0;
         font-size: 2.899vw;
-        /* 12 */
     }
 
 
