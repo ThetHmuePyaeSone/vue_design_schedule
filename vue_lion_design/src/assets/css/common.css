@@ -172,7 +172,7 @@ a {
 }
 
 .banner {
-    padding: 20px;
+    /* padding: 20px; */
     /* padding-left: 40px; */
 }
 
@@ -566,7 +566,12 @@ a {
 }
 
 .carousel__slide {
-    padding: 10px 0 0 25px !important;
+    padding: 10px 0 0 !important;
+}
+
+.content-banner .carousel__slide{
+    margin: 0 25px !important;
+    width: 340px!important;
 }
 
 .carousel__prev,
@@ -581,19 +586,34 @@ a {
     background: #00A05C !important;
 }
 
+.banner .carousel__prev{
+    left: 25px!important;
+}
+
+.banner .carousel__next{
+    right: 25px!important;
+}
+
+.content-banner .carousel__prev{
+    left: 40px!important;
+}
+.content-banner .carousel__next{
+    right: 40px!important;
+}
+
 .banner .carousel__icon {
+    /* width: 48px !important;
+    height: 48px !important; */
+}
+
+.carousel__prev {
     width: 48px !important;
     height: 48px !important;
 }
 
-.banner .carousel__prev {
-    width: 48px;
-    height: 48px;
-}
-
-.banner .carousel__next {
-    width: 48px;
-    height: 48px;
+ .carousel__next {
+    width: 48px !important;
+    height: 48px !important;
 }
 
 .content-banner .carousel__viewport {
@@ -602,6 +622,7 @@ a {
 }
 
 .content-banner .carousel__track {
+    padding: 0 40px;
     /* transform: translateX(-227.938px) !important;
     transition: all 0ms ease 0s !important; */
 }
@@ -615,31 +636,20 @@ a {
 }
 
 .carousel__pagination-button {
-    background: #C3E6D3 !important;
-    border-radius: 50% !important;
-    height: 12px !important;
+    
+        background: #C3E6D3 !important;
+        border-radius: 50% !important;
+        width: 10px !important;
+        height: 10px !important;
+        padding: 0!important;
+        margin: 10px !important;
+    
 }
 
 .carousel__pagination-button--active {
     background: #00A05C !important;
 }
 
-.carousel__pagination li:last-child button {
-    /* padding: 0;
-    margin: var(--vc-pgn-margin);
-    width: var(--vc-pgn-width);
-    cursor: pointer; */
-
-}
-
-.carousel__pagination li:last-child button:hover {
-    /* width: 0;
-    height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 11px solid red;
-    border-right: 0; */
-}
 
 .tri-icon {
     width: 0;

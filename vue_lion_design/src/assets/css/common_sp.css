@@ -4,7 +4,7 @@
         font-family: 'Hiragino Kaku Gothic Pro';
         src: url('@/assets/fonts/Hiragino Kaku Gothic Pro W3.otf') format('truetype');
     }
-    
+
     .pc {
         display: none !important;
     }
@@ -19,9 +19,9 @@
     }
 
     .col-4 {
-        float: left;
+        /* float: left;
         width: 100%;
-        padding: 2.415vw;
+        padding: 2.415vw; */
     }
 
     .col-2 {
@@ -39,9 +39,9 @@
 
         background: #ffffff;
         height: 15.7vw;
-        display: flex;
+        display: inline-block;
         justify-content: space-between;
-        border-bottom: 1px solid #707070;
+        box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
     }
 
     /* header section */
@@ -66,8 +66,7 @@
         font-size: 3.865vw;
         font-weight: 600;
         float: left;
-        margin-top: 4.831vw;
-        padding-left: 4.831vw;
+        margin: 5.831vw;
         color: #00A051;
     }
 
@@ -145,7 +144,7 @@
         width: 4.831vw;
         /* height: 20px; */
         float: right;
-        padding: 6.039vw 4.831vw 3.623vw 0;
+        padding: 8.039vw 0 3.623vw 0;
     }
 
     .menu-button-container {
@@ -218,8 +217,7 @@
     }
 
     .banner {
-        padding: 4.831vw;
-        /* padding-left: 9.662vw; */
+        padding: 4.831vw 0;
     }
 
     .banner img {
@@ -228,17 +226,21 @@
         /* position: relative; */
     }
 
-    .banner span {
+    .banner p {
         position: absolute;
-        width: 80.435vw;
+        width: 90.435vw;
         /* width: 169.082vw; */
         text-align: left;
         line-height: 6.039vw;
-        padding: 21.155vw 0 0 4.831vw;
+        left: 10.628vw;
+        bottom: 4.831vw;
         color: #ffffff;
         font-style: "Noto Sans JP";
         font-size: 3.865vw;
         font-weight: 700;
+        text-shadow: rgb(0 0 0 / 10%) 0px 5px 5px;
+
+      
     }
 
     /* content */
@@ -247,33 +249,41 @@
     }
 
     .content-inner {
-        /* padding-left: 14.493vw; */
-        padding-bottom: 18.841vw;
+        /* padding-bottom: 18.841vw; */
+        padding:10.628vw 0 9.662vw;
+
     }
 
     .title {
-        font-size: 4.831vw;
+        padding-bottom: 4.831vw;
+        font-size: 3.865vw;
         font-weight: 600;
     }
 
     .subtitle {
-        font-size: 8.696vw;
+        font-size: 6.039vw;
         font-weight: 600;
         color: #00A05C;
+        padding: 0 0 6.522vw;
     }
 
     .info {
         font-size: 3.865vw;
         font-weight: 500;
+        padding-top: 8.6vw;
     }
 
 
     .content-title {
-        padding-top: 4.831vw;
+        padding-top: 0vw;
     }
 
     .content-title p {
-        line-height: 9.42vw
+        /* line-height: 9.42vw; */
+    }
+
+    .content-banner{
+        padding: 7.971vw 0 15.7vw;
     }
 
     .line {
@@ -348,6 +358,7 @@
 
 
     .research-title {
+        font-size: 4.831vw !important;
         padding: 7.005vw 0 0 0;
     }
 
@@ -381,6 +392,13 @@
         padding-bottom: 7.246vw;
     }
 
+    .acc-blk {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
 
     .research-container h3 {
         cursor: pointer;
@@ -388,15 +406,16 @@
     }
 
     .research-container p {
-        color: #333;
-        font-size: 4.831vw;
-        font-weight: 700;
+        /* color: #333; */
+        font-size: 3.382vw;
     }
 
     .date {
         font-size: 2.899vw;
         font-family: 'Hiragino Kaku Gothic Pro';
         padding: 0;
+        width: 26.5%;
+        /* color: #00A05C; */
     }
 
     .description {
@@ -434,7 +453,7 @@
         list-style-type: none;
         padding-left: 0;
         border-radius: 1.208vw;
-        padding-top: 4.831vw;
+        padding-top: 8vw;
     }
 
     .research-container ul li {
@@ -450,8 +469,8 @@
     }
 
     .research-container ul li:hover {
-        background: #00A05C;
-        color: #ffffff;
+        /* background: #00A05C;
+        color: #ffffff; */
     }
 
     .research-inner {
@@ -466,7 +485,7 @@
         display: flex;
         flex-direction: column;
         /* padding-top: 4.831vw; */
-        padding: 4.831vw;
+        padding: 7.246vw 9.662vw 7.246vw 2.174vw;
         /* 20px */
         line-height: 4.831vw;
         font-size: 2.899vw;
@@ -479,6 +498,10 @@
     /* related  */
     .related-container {
         background: #FFFFFF;
+    }
+
+    .related-container .content-inner{
+        padding: 9.662vw 0 0 0;
     }
 
     .related-banner {
@@ -541,7 +564,7 @@
     /* footer  */
     .footer-container {
         background: #FFFFFF;
-        margin-top: 2.415vw;
+        border-top: 1px solid #A4A4A4;
     }
 
     .footer-inner {
@@ -551,7 +574,7 @@
 
     .footer-banner {
         display: flex;
-        padding-top: 4.831vw;
+        padding: 9.662vw 0 0 6vw;
         flex-direction: row;
         flex-wrap: nowrap;
 
@@ -563,7 +586,7 @@
 
     .lion-2x img {
         /* width: 50%; */
-        width: 32%;
+        width: 27%;
         display: flex;
         position: absolute;
         padding-left: 24.155vw;
@@ -571,15 +594,16 @@
 
     .footer-banner ul {
         display: block;
-        gap: 4.831vw;
-        padding-top: 15.729vw;
+        /* gap: 4.831vw; */
+        /* padding-top: 15.729vw; */
+        padding-top: 9.662vw;
     }
 
     .footer-banner ul li {
         display: flex;
-        gap: 2.415vw;
+        /* gap: 2.415vw; */
         width: 48.309vw;
-        padding-top: 5.797vw;
+        padding: 5.797vw 0 0 6vw;
         font-size: 2.899vw;
     }
 
@@ -592,17 +616,23 @@
         padding-top: 4.831vw;
     }
 
+    .footer-swap img{
+        margin: 9.22vw -4.9vw 0 0;
+    }
+
     .footer-bar {
         text-align: center;
         color: #ffffff;
         background: #00A05C;
-        line-height: 21.739vw;
+        /* line-height: 21.739vw; */
+        padding: 0 0 5vw 0;
     }
 
     .footer-bar span {
         /* padding: 6.522vw 0 10.87vw 0; */
         padding: 6.039vw 0;
         font-size: 2.899vw;
+        letter-spacing: 0.145vw;
     }
 
 
@@ -610,6 +640,7 @@
     .carousel__item {
         color: #000000;
     }
+
 
     .content-banner .carousel__slide {
         width: 78% !important;
@@ -635,13 +666,17 @@
         background: #00A05C !important;
     }
 
-    /* .banner .carousel__prev {
-        left: 9.662vw !important;
+    .banner .carousel__prev {
+        left: 0.662vw !important;
+        width: 35px !important;
+        height: 35px !important;
     }
 
     .banner .carousel__next {
-        right: 9.662vw !important;
-    } */
+        right: 0.662vw !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
 
     .content-banner .carousel__prev {
         left: 1% !important;

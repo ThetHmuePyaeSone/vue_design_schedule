@@ -1,6 +1,7 @@
 <template>
   <div class="header-container">
     <div class="container">
+     
       <div class="logo">
         <figure><img src="../assets/img/img-head.png" alt="logo" /></figure>
       </div>
@@ -33,6 +34,7 @@
           </li>
         </ul>
       </div>
+    
       <div class="menu sp">
             <!-- <input id="menu-toggle" type="checkbox" /> -->
             <label class='menu-button-container' for="menu-toggle">
@@ -40,6 +42,7 @@
             </label>
       </div>
     </div>
+   
   </div>
   <!-- /header-container -->
   <div class="banner-container">
@@ -48,12 +51,12 @@
         <carousel ref="carousel" :item-to-show="1">
           <slide v-for="slide in 3" :key="slide">
             <figure>
-              <p class="pc">
+              <p>
                 見出しカラー#FFFにし、フォントサイズ36px。<br>
                 背景は#000(0.5)、テキストエリア横幅 <br> 
                 700pxに設定。文字数は64文字
               </p>
-              <span class="sp">見出しカラー#FFFにし、フォントサイズ36px。背景は#000(0.5)、テキストエリア横幅700pxに設定。文字数は64文字</span>
+              
               <img src="../assets/img/img_banner.png" />
             </figure>
              </slide>
@@ -194,7 +197,8 @@
       <div class="footer-inner">
         <div class="footer-banner">
           <div class="col-4">
-           <figure class="lion-2x"><img src="../assets/img/img-head.png" alt="" /></figure> 
+           <figure class="lion-2x pc"><img src="../assets/img/img-head.png" alt="" /></figure>
+           <figure class="lion-2x sp"><img src="../assets/img/footer-image.png" alt="" /></figure>  
           </div>
           
             <ul>
